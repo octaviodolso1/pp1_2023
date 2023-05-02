@@ -1,0 +1,18 @@
+!DOCTYPE <html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="whidt=device-width, initial,scale=1">
+    <title>Document</title>
+</head>device-width
+<body>
+    <script>
+        const letras = ['T','R','W','A','G','M','Y','F','P','D','H','B','N','J','Z','E','T'];
+        let dni = prompt('Ingrese Dni:') ;
+        let resto = dni % 23 ;
+        const letra = letras[resto];
+        let salida = dni + '('+ letra +')';
+        document.body.innerHTML = '<h1>' + salida + '</h1>';
+    </script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<HTML lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="viewport" content="whidt=device-widht, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const letras = ['T', 'R', 'W', 'A', 'G', 'M', 'Y', 'F', 'P', 'D', 'X', 'B', 'N', 'J', 'Z', 'S', 'Q', 'V', 'H', 'L', 'C', 'K',
+'E', 'T'];
+        let salida =""; 
+        let dni = prompt('INGRESE DNI: ');
+        if (dni < - || dni>= 10 **8) {
+            salida = "numero invalido.";
+            alert("numero fuera de rango.");
+        } else {
+            let modulo = dni % 23;
+            const letra = letras[modulo];
+            salida = dni + "("+ letra +")";
+        }
+        
+        Document.body.innerhtml= "<h1>" + salida + "</h1>";
+    </script>
+</body>
+</HTML>

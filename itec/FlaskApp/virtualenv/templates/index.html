@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flask</title>
+</head>
+<body>
+    <H1>El siguiente mensaje viene desde app.py</H1>
+    <h3>{{mensaje}}</h3>
+    <h1>La siguiente lista tambien</h1>
+    {% for carrera in lista_carreras %}
+            <li>{{carrera}}</li>
+    {% endfor %}
+
+</body>
+</html>
